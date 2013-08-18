@@ -56,7 +56,6 @@ body {
     background-color: #aab3a3;
     margin: 0;
     padding: 0;
-    border-bottom: 3px double #000000;
 }
 #header h3 {
     font-family: "Courier", "Courier New", monospace;
@@ -78,9 +77,8 @@ body {
 .highlighttable .linenos {
     background-color: #dddddd;
     padding-left: 0.0em;
-    padding-right: 0.0em;
+    padding-right: 0.2em;
     margin: 0.0em;
-    border-right: 3px double #000000;
 }
 .hightlighttable .linenos pre {
     font-family: "Courier", "Courier New", monospace;
