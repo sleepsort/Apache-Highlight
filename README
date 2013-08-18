@@ -19,7 +19,7 @@ your Apache config, or into an .htaccess file in individual directories.
 Add to or remove from this list to your liking. Only the first line and
 one AddHandler line are necessary.
 
-    Action highlight /cgi-bin/highlight.cgi
+    Action highlight /cgi-bin/highlighter.cgi
     AddHandler highlight .py
     AddHandler highlight .pl
     AddHandler highlight .pm
@@ -45,6 +45,8 @@ ChangeLog:
     2010-05-12: Added Documentation
                 Changed one of the styles to make the numbers a fixed-width font
     2010-11-26: Added link to download a direct plaintext copy of the file
+    2013-08-18: Remove color scheme and simplify codes for better performance
+                Add support for unrecognized files (use TexLexer by default)
 
 Known Issues:
     The line numbers are sometimes useless, as they don't align with the code always. If
