@@ -25,9 +25,9 @@ from pygments import formatters
 
 filename = cgi.os.environ["PATH_TRANSLATED"]
 title = path.basename(filename)
-fh = open(filename, 'r')
-lines = fh.readlines()
-fh.close()
+file = open(filename, 'r')
+lines = file.readlines()
+file.close()
 content = "".join(lines)
 
 # check whether we need to download it
@@ -70,13 +70,12 @@ body {
 .highlighttable {
     padding: 0;
     margin: 0;
-    width: 100%%;
     font-family: "Courier", "Courier New", monospace;
     line-height: auto;
 }
 .highlighttable .linenos {
     background-color: #dddddd;
-    padding-left: 0.0em;
+    padding-left: 0.2em;
     padding-right: 0.2em;
     margin: 0.0em;
 }
